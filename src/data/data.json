@@ -1,0 +1,228 @@
+{
+  "data": [
+    {
+      "Ques": "What is TypeScript?",
+      "option1": "A text formatting language",
+      "option2": "A superset of JavaScript",
+      "option3": "A type of database",
+      "option4": "A web server",
+      "correct": "option2"
+    },
+    {
+      "Ques": "Which command is used to install TypeScript globally?",
+      "option1": "npm install typescript",
+      "option2": "npm install -g typescript",
+      "option3": "npm add typescript",
+      "option4": "npm get typescript",
+      "correct": "option2"
+    },
+    {
+      "Ques": "Which file extension is used for TypeScript files?",
+      "option1": ".ts",
+      "option2": ".js",
+      "option3": ".tsx",
+      "option4": ".tscript",
+      "correct": "option1"
+    },
+    {
+      "Ques": "How do you compile a TypeScript file named app.ts?",
+      "option1": "tsc app.js",
+      "option2": "tsc app.ts",
+      "option3": "typescript app.ts",
+      "option4": "compile app.ts",
+      "correct": "option2"
+    },
+    {
+      "Ques": "Which keyword is used to define a variable in TypeScript?",
+      "option1": "var",
+      "option2": "let",
+      "option3": "const",
+      "option4": "All of the above",
+      "correct": "option4"
+    },
+    {
+      "Ques": "How do you specify the type of a variable in TypeScript?",
+      "option1": "let x = 5",
+      "option2": "let x: number = 5",
+      "option3": "let number x = 5",
+      "option4": "let x number = 5",
+      "correct": "option2"
+    },
+    {
+      "Ques": "What will be the output of the following TypeScript code?\nlet isDone: boolean = false;\nconsole.log(typeof isDone);",
+      "option1": "\"string\"",
+      "option2": "\"boolean\"",
+      "option3": "\"number\"",
+      "option4": "\"object\"",
+      "correct": "option2"
+    },
+    {
+      "Ques": "Which of the following is true about interfaces in TypeScript?",
+      "option1": "Interfaces can be used to define the structure of an object.",
+      "option2": "Interfaces can be used to define function types.",
+      "option3": "Interfaces can be implemented by classes.",
+      "option4": "All of the above.",
+      "correct": "option4"
+    },
+    {
+      "Ques": "What is the purpose of the tsconfig.json file?",
+      "option1": "To define the configuration for the TypeScript compiler.",
+      "option2": "To list all TypeScript files in the project.",
+      "option3": "To set environment variables for TypeScript.",
+      "option4": "To configure TypeScript package dependencies.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "How do you define a function in TypeScript that takes a number and returns a string?",
+      "option1": "function foo(num): string",
+      "option2": "function foo(num: number): string",
+      "option3": "function foo(num: number) => string",
+      "option4": "function foo(num: number): void",
+      "correct": "option2"
+    },
+    {
+      "Ques": "What will be the output of the following TypeScript code?\nlet numbers: number[] = [1, 2, 3];\nnumbers.push(4);\nconsole.log(numbers);",
+      "option1": "[1, 2, 3]",
+      "option2": "[1, 2, 3, 4]",
+      "option3": "[4, 1, 2, 3]",
+      "option4": "Error",
+      "correct": "option2"
+    },
+    {
+      "Ques": "Which TypeScript feature allows you to specify default values for function parameters?",
+      "option1": "Optional parameters",
+      "option2": "Rest parameters",
+      "option3": "Default parameters",
+      "option4": "Named parameters",
+      "correct": "option3"
+    },
+    {
+      "Ques": "What will be the output of the following TypeScript code?\nfunction greet(name: string, age: number = 25): string {\n  return `Hello, my name is ${name} and I am ${age} years old.`;\n}\nconsole.log(greet(\"John\"));",
+      "option1": "Hello, my name is John and I am years old.",
+      "option2": "Hello, my name is John and I am 25 years old.",
+      "option3": "Hello, my name is John and I am undefined years old.",
+      "option4": "Hello, my name is John and I am NaN years old.",
+      "correct": "option2"
+    },
+    {
+      "Ques": "How do you denote a tuple type in TypeScript?",
+      "option1": "[string, number]",
+      "option2": "{string, number}",
+      "option3": "(string, number)",
+      "option4": "<string, number>",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What does the readonly modifier do in TypeScript?",
+      "option1": "It makes a property modifiable only once.",
+      "option2": "It makes a property writable only.",
+      "option3": "It makes a property read-only.",
+      "option4": "It makes a property visible only within the class.",
+      "correct": "option3"
+    },
+    {
+      "Ques": "How do you define an enum in TypeScript?",
+      "option1": "enum Color {Red, Green, Blue}",
+      "option2": "enum Color = {Red, Green, Blue}",
+      "option3": "enum Color (Red, Green, Blue)",
+      "option4": "enum Color <Red, Green, Blue>",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What is the purpose of the as keyword in TypeScript?",
+      "option1": "To define a new type",
+      "option2": "To perform type assertion",
+      "option3": "To declare a variable",
+      "option4": "To import a module",
+      "correct": "option2"
+    },
+    {
+      "Ques": "How do you declare a module in TypeScript?",
+      "option1": "module MyModule {}",
+      "option2": "namespace MyModule {}",
+      "option3": "declare MyModule {}",
+      "option4": "define MyModule {}",
+      "correct": "option2"
+    },
+    {
+      "Ques": "Which of the following allows you to inherit properties and methods from another class in TypeScript?",
+      "option1": "inherits",
+      "option2": "extends",
+      "option3": "implements",
+      "option4": "instanceof",
+      "correct": "option2"
+    },
+    {
+      "Ques": "What will be the output of the following TypeScript code?\nclass Animal {\n  name: string;\n  constructor(name: string) {\n    this.name = name;\n  }\n  move(distance: number = 0) {\n    console.log(`${this.name} moved ${distance}m.`);\n  }\n}\nlet cat = new Animal(\"Cat\");\ncat.move(10);",
+      "option1": "Cat",
+      "option2": "Cat moved.",
+      "option3": "Cat moved 10m.",
+      "option4": "Error",
+      "correct": "option3"
+    },
+    {
+      "Ques": "What TypeScript feature allows you to create reusable components with constraints?",
+      "option1": "Modules",
+      "option2": "Interfaces",
+      "option3": "Generics",
+      "option4": "Namespaces",
+      "correct": "option3"
+    },
+    {
+      "Ques": "Which of the following is a correct way to define a function that accepts a generic type in TypeScript?",
+      "option1": "function identity<T>(arg: T): T",
+      "option2": "function identity(T): T",
+      "option3": "function identity[T](arg: T): T",
+      "option4": "function identity<T>(arg: T) => T",
+      "correct": "option1"
+    },
+    {
+      "Ques": "How do you specify that a class implements an interface in TypeScript?",
+      "option1": "class MyClass implements MyInterface",
+      "option2": "class MyClass extends MyInterface",
+      "option3": "class MyClass inherits MyInterface",
+      "option4": "class MyClass uses MyInterface",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What will be the output of the following TypeScript code?\ninterface User {\n  name: string;\n  age: number;\n}\nlet user: User = { name: \"Alice\", age: 25 };\nconsole.log(user.name);",
+      "option1": "Alice",
+      "option2": "25",
+      "option3": "undefined",
+      "option4": "Error",
+      "correct": "option1"
+    },
+    {
+      "Ques": "Which TypeScript utility type creates a new type with all properties of another type set to optional?",
+      "option1": "Partial",
+      "option2": "Readonly",
+      "option3": "Required",
+      "option4": "Pick",
+      "correct": "option1"
+    },
+    {
+      "Ques": "How do you specify that a function parameter is optional in TypeScript?",
+      "option1": "function greet(name?: string)",
+      "option2": "function greet(?name: string)",
+      "option3": "function greet(name: string = null)",
+      "option4": "function greet(optional name: string)",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What will be the output of the following TypeScript code?\nfunction getLength(obj: string | string[]): number {\n  return obj.length;\n}\nconsole.log(getLength(\"Hello\"));",
+      "option1": "5",
+      "option2": "undefined",
+      "option3": "Error",
+      "option4": "0",
+      "correct": "option1"
+    },
+    {
+      "Ques": "Which of the following allows you to extract the type of a function's return value in TypeScript?",
+      "option1": "ReturnType",
+      "option2": "ExtractType",
+      "option3": "ReturnTypeOf",
+      "option4": "ExtractReturnType",
+      "correct": "option1"
+    }
+  ]
+}

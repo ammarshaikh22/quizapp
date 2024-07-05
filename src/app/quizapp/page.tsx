@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import dataGet from "@/data/data.json";
 import { Button } from "@/component/ui/moving-border";
 import Timer from "@/component/Timer";
@@ -8,10 +8,10 @@ import { useRouter } from "next/navigation";
 import { Context } from "../context/CustomContext";
 
 const Page = () => {
-  let { data, setSkip } = useContext(Context);
-  let { setCorrect } = useContext(Context) as any;
-  let router = useRouter();
-  const [answers, setAnswers] = useState({}) as any;
+  const [answers, setAnswers] = useState<Record<number, string>>({});
+  const prevAnswers = useRef(answers);
+  const { data, setSkip, setCorrect } = useContext(Context);
+  const router = useRouter();
 
   const handleTimesUp = () => {
     alert("Time's up!");
@@ -19,92 +19,65 @@ const Page = () => {
   };
 
   const handleClick = () => {
+    let correctCount = 0;
+    let skipCount = 0;
     dataGet.data.forEach((question, index) => {
       if (answers[index] === question.correct) {
-        setCorrect((pre: any) => pre + 1);
-      } else if (answers[index] === undefined) {
-        setSkip((pre: any) => pre + 1);
+        correctCount++;
+      } else if (answers[index] === undefined || answers[index] === null) {
+        skipCount++;
       }
     });
+    setCorrect(correctCount);
+    setSkip(skipCount);
+    prevAnswers.current = answers;
     router.push("/result");
   };
 
-  const handleChange = (e: any, index: number) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
     setAnswers({
       ...answers,
       [index]: e.target.value,
     });
   };
-  let words = [
-    {
-      text: "HI",
-    },
-    {
-      text: data.fName,
-    },
-    {
-      text: data.lName,
-    },
+
+  const words = [
+    { text: "HI" },
+    { text: data.fName },
+    { text: data.lName },
   ];
 
   return (
     <section className="relative py-10">
-      <div className="max-w-[95%] mx-auto ">
+      <div className="max-w-[95%] mx-auto">
         <div className="flex-col flex md:flex-row justify-center md:items-start items-center">
           <div className="w-[10%]">
             <Timer initialMinutes={10} onTimesUp={handleTimesUp} />
           </div>
           <div className="flex flex-col gap-5 w-[70%] justify-center items-center mt-4">
-            {dataGet.data.map((curr, index) => {
-              return (
-                <div
-                  className="p-5 rounded-lg bg-gray-900 w-[330px] sm:w-[500px] md:w-[550px] lg:w-[650px] h-auto"
-                  key={index}
-                >
-                  <h1 className="text-lg">
-                    {index + 1}):{curr.Ques}
-                  </h1>
-                  <div className="flex flex-col gap-6 items-start mt-6">
-                    <div>
+            {dataGet.data.map((curr:any, index) => (
+              <div
+                className="p-5 rounded-lg bg-gray-900 w-[330px] sm:w-[500px] md:w-[550px] lg:w-[650px] h-auto"
+                key={index}
+              >
+                <h1 className="text-lg">
+                  {index + 1}): {curr.Ques}
+                </h1>
+                <div className="flex flex-col gap-6 items-start mt-6">
+                  {['option1', 'option2', 'option3', 'option4'].map((option, optIndex) => (
+                    <div key={optIndex}>
                       <input
                         type="radio"
                         name={`options${index}`}
                         onChange={(e) => handleChange(e, index)}
-                        value="option1"
+                        value={option}
                       />
-                      <span className="ml-4">{curr.option1}</span>
+                      <span className="ml-4">{curr[option]}</span>
                     </div>
-                    <div>
-                      <input
-                        type="radio"
-                        name={`options${index}`}
-                        onChange={(e) => handleChange(e, index)}
-                        value="option2"
-                      />
-                      <span className="ml-4">{curr.option2}</span>
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        name={`options${index}`}
-                        onChange={(e) => handleChange(e, index)}
-                        value="option3"
-                      />
-                      <span className="ml-4">{curr.option3}</span>
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        name={`options${index}`}
-                        onChange={(e) => handleChange(e, index)}
-                        value="option4"
-                      />
-                      <span className="ml-4">{curr.option4}</span>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
           <div className="sm:w-[20%]">
             <TypewriterEffectSmooth words={words} />

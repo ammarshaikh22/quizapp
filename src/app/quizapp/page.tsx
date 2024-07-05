@@ -8,25 +8,25 @@ import { useRouter } from "next/navigation";
 import { Context } from "../context/CustomContext";
 
 const Page = () => {
-  let { data } = useContext(Context)
-  let { setCorrect } = useContext(Context) as any
-  let router = useRouter()
+  let { data, setSkip } = useContext(Context);
+  let { setCorrect } = useContext(Context) as any;
+  let router = useRouter();
   const [answers, setAnswers] = useState({}) as any;
 
   const handleTimesUp = () => {
     alert("Time's up!");
-    router.push('/result')
+    router.push("/result");
   };
 
   const handleClick = () => {
     dataGet.data.forEach((question, index) => {
       if (answers[index] === question.correct) {
-        setCorrect((pre: any) => {
-          return pre + 1
-        })
+        setCorrect((pre: any) => pre + 1);
+      } else if (answers[index] === undefined) {
+        setSkip((pre: any) => pre + 1);
       }
     });
-    router.push('/result')
+    router.push("/result");
   };
 
   const handleChange = (e: any, index: number) => {
@@ -61,7 +61,9 @@ const Page = () => {
                   className="p-5 rounded-lg bg-gray-900 sm:w-[500px] md:w-[550px] lg:w-[650px] h-auto "
                   key={index}
                 >
-                  <h1 className="text-lg">{index + 1}):{curr.Ques}</h1>
+                  <h1 className="text-lg">
+                    {index + 1}):{curr.Ques}
+                  </h1>
                   <div className="flex flex-col gap-6 items-start mt-6">
                     <div>
                       <input

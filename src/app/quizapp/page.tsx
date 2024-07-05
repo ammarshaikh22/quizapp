@@ -54,11 +54,11 @@ const Page = () => {
           <div className="w-[10%]">
             <Timer initialMinutes={10} onTimesUp={handleTimesUp} />
           </div>
-          <div className="flex flex-col gap-5 w-[70%] justify-center items-center">
+          <div className="flex flex-col gap-5 w-[70%] justify-center items-center mt-4">
             {dataGet.data.map((curr, index) => {
               return (
                 <div
-                  className="p-5 rounded-lg bg-gray-900 sm:w-[500px] md:w-[550px] lg:w-[650px] h-auto "
+                  className="p-5 rounded-lg bg-gray-900 w-[330px] sm:w-[500px] md:w-[550px] lg:w-[650px] h-auto"
                   key={index}
                 >
                   <h1 className="text-lg">
@@ -106,7 +106,7 @@ const Page = () => {
               );
             })}
           </div>
-          <div className="w-[20%]">
+          <div className="sm:w-[20%]">
             <TypewriterEffectSmooth words={words} />
           </div>
         </div>

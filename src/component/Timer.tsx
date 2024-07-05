@@ -1,7 +1,7 @@
-"use client"
-import { useEffect, useState } from 'react';
+"use client";
+import { useEffect, useState } from "react";
 
-const Timer = ({ initialMinutes , onTimesUp }:any) => {
+const Timer = ({ initialMinutes, onTimesUp }: any) => {
   const [time, setTime] = useState(initialMinutes * 60);
 
   useEffect(() => {
@@ -18,16 +18,17 @@ const Timer = ({ initialMinutes , onTimesUp }:any) => {
   }, [onTimesUp, time]);
 
   const formatTime = (time: number) => {
-    // console.log(time)
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
-    return `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    return `${minutes < 10 ? "0" : ""}${minutes}:${
+      seconds < 10 ? "0" : ""
+    }${seconds}`;
   };
 
   return (
-    <div id="timer">
+    <h1 id="timer" className="text-xl fixed">
       {formatTime(time)}
-    </div>
+    </h1>
   );
 };
 

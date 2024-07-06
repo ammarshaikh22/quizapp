@@ -9,7 +9,7 @@ const Page = () => {
     router.push("/quizapp");
   };
   return (
-    <section className="relative py-5 md:py-10">
+    <section className="relative py-5 md:py-10 bg-black dark:text-white">
       <div className="max-w-[80%] md:max-w-[70%] mx-auto ">
         <div className="flex flex-col justify-center items-center">
           <div className="flex gap-56 ">

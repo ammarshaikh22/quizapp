@@ -5,7 +5,7 @@ import data from "@/data/data.json"
 const Page = () => {
   let { correct, skip, wrong } = useContext(Context) as any
   return (
-    <div className='flex flex-col justify-center items-center h-screen'>
+    <div className='flex flex-col justify-center items-center h-screen dark:text-white bg-black'>
       <div className='w-[360px] h-[180px] bg-blue-700 rounded-lg text-center p-3'>
         <h1 className='text-xl font-semibold'>{`Correct are ${correct} 👍`}</h1>
         <h1 className='text-xl font-semibold'>{`Wrong are ${wrong} 👎`}</h1>

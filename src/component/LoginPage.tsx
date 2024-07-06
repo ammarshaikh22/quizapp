@@ -74,7 +74,7 @@ const LoginPage = () => {
     })
   }
   return (
-    <section className='w-full relative my-28 md:my-20'>
+    <section className='w-full relative py-28 md:py-20'>
       <div className='max-w-[80%] md:max-w-[50%] mx-auto'>
         <div className='flex flex-col justify-center items-center w-full'>
           <div className='text-center mb-8 md:mb-2'>

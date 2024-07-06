@@ -71,7 +71,7 @@ const Page = () => {
   const words = [{ text: "HI" }, { text: data.fName }, { text: data.lName }];
 
   return (
-    <section className="relative py-10">
+    <section className="dark:text-white bg-black relative py-10">
       <div className="max-w-[95%] mx-auto">
         <div className="flex-col flex md:flex-row justify-center md:items-start items-center">
           <div className="w-[10%]">

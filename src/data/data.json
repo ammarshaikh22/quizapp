@@ -113,12 +113,12 @@
       "correct": "option1"
     },
     {
-      "Ques": "What does the readonly modifier do in TypeScript?",
-      "option1": "It makes a property modifiable only once.",
-      "option2": "It makes a property writable only.",
-      "option3": "It makes a property read-only.",
-      "option4": "It makes a property visible only within the class.",
-      "correct": "option3"
+      "Ques": "Which of the following TypeScript features helps catch errors at compile time rather than runtime?",
+      "option1": "Type annotations",
+      "option2": "Interfaces",
+      "option3": "Namespaces",
+      "option4": "All of the above",
+      "correct": "option4"
     },
     {
       "Ques": "How do you define an enum in TypeScript?",
@@ -145,35 +145,35 @@
       "correct": "option2"
     },
     {
-      "Ques": "Which of the following allows you to inherit properties and methods from another class in TypeScript?",
-      "option1": "inherits",
-      "option2": "extends",
-      "option3": "implements",
-      "option4": "instanceof",
-      "correct": "option2"
+      "Ques": "What is the purpose of the never type in TypeScript?",
+      "option1": "To represent the type of values that never occur.",
+      "option2": "To represent the absence of a value.",
+      "option3": "To represent the type of a variable that can hold any value.",
+      "option4": "To represent the type of a variable that can be null.",
+      "correct": "option1"
     },
     {
-      "Ques": "What will be the output of the following TypeScript code?\nclass Animal {\n  name: string;\n  constructor(name: string) {\n    this.name = name;\n  }\n  move(distance: number = 0) {\n    console.log(`${this.name} moved ${distance}m.`);\n  }\n}\nlet cat = new Animal(\"Cat\");\ncat.move(10);",
-      "option1": "Cat",
-      "option2": "Cat moved.",
-      "option3": "Cat moved 10m.",
+      "Ques": "How do you specify that a variable can be of more than one type in TypeScript?",
+      "option1": "let value: string | number",
+      "option2": "let value: string & number",
+      "option3": "let value: [string, number]",
+      "option4": "let value: {string, number}",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What will be the output of the following TypeScript code?\nlet value: string | number;\nvalue = \"hello\";\nconsole.log(value);\nvalue = 42;\nconsole.log(value);",
+      "option1": "hello 42",
+      "option2": "hello",
+      "option3": "42",
       "option4": "Error",
-      "correct": "option3"
+      "correct": "option1"
     },
     {
-      "Ques": "What TypeScript feature allows you to create reusable components with constraints?",
-      "option1": "Modules",
-      "option2": "Interfaces",
-      "option3": "Generics",
-      "option4": "Namespaces",
-      "correct": "option3"
-    },
-    {
-      "Ques": "Which of the following is a correct way to define a function that accepts a generic type in TypeScript?",
-      "option1": "function identity<T>(arg: T): T",
-      "option2": "function identity(T): T",
-      "option3": "function identity[T](arg: T): T",
-      "option4": "function identity<T>(arg: T) => T",
+      "Ques": "How do you handle errors in TypeScript?",
+      "option1": "Using try/catch blocks",
+      "option2": "Using error handling interfaces",
+      "option3": "Using error handling classes",
+      "option4": "TypeScript does not support error handling",
       "correct": "option1"
     },
     {
@@ -185,43 +185,19 @@
       "correct": "option1"
     },
     {
-      "Ques": "What will be the output of the following TypeScript code?\ninterface User {\n  name: string;\n  age: number;\n}\nlet user: User = { name: \"Alice\", age: 25 };\nconsole.log(user.name);",
-      "option1": "Alice",
-      "option2": "25",
-      "option3": "undefined",
+      "Ques": "What will be the output of the following TypeScript code?\ninterface User {\n  name: string;\n  age: number;\n}\nlet user: User = { name: \"Alice\", age: 25 };\nconsole.log(user);",
+      "option1": "{ name: \"Alice\", age: 25 }",
+      "option2": "{ \"name\": \"Alice\", \"age\": 25 }",
+      "option3": "{ User name: \"Alice\", age: 25 }",
       "option4": "Error",
       "correct": "option1"
     },
     {
-      "Ques": "Which TypeScript utility type creates a new type with all properties of another type set to optional?",
-      "option1": "Partial",
-      "option2": "Readonly",
-      "option3": "Required",
-      "option4": "Pick",
-      "correct": "option1"
-    },
-    {
-      "Ques": "How do you specify that a function parameter is optional in TypeScript?",
-      "option1": "function greet(name?: string)",
-      "option2": "function greet(?name: string)",
-      "option3": "function greet(name: string = null)",
-      "option4": "function greet(optional name: string)",
-      "correct": "option1"
-    },
-    {
-      "Ques": "What will be the output of the following TypeScript code?\nfunction getLength(obj: string | string[]): number {\n  return obj.length;\n}\nconsole.log(getLength(\"Hello\"));",
-      "option1": "5",
-      "option2": "undefined",
-      "option3": "Error",
-      "option4": "0",
-      "correct": "option1"
-    },
-    {
-      "Ques": "Which of the following allows you to extract the type of a function's return value in TypeScript?",
-      "option1": "ReturnType",
-      "option2": "ExtractType",
-      "option3": "ReturnTypeOf",
-      "option4": "ExtractReturnType",
+      "Ques": "What will be the output of the following TypeScript code?\ninterface Shape {\n  color: string;\n}\ninterface Square extends Shape {\n  sideLength: number;\n}\nlet square: Square = { color: \"blue\", sideLength: 10 };\nconsole.log(square);",
+      "option1": "{ color: \"blue\", sideLength: 10 }",
+      "option2": "{ Shape color: \"blue\", sideLength: 10 }",
+      "option3": "{ Square color: \"blue\", sideLength: 10 }",
+      "option4": "Error",
       "correct": "option1"
     }
   ]

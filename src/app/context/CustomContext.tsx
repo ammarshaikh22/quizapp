@@ -19,6 +19,8 @@ export interface CustomContextType {
   setCorrect: any;
   skip: number | undefined
   setSkip: any
+  wrong: number | undefined
+  setWrong: any
 }
 
 const defaultData: CustomContextType = {
@@ -31,7 +33,9 @@ const defaultData: CustomContextType = {
   correct: 0,
   setCorrect: () => { },
   skip: 0,
-  setSkip: () => { }
+  setSkip: () => { },
+  wrong: 0,
+  setWrong: () => { }
 };
 
 // Export context and provider
@@ -41,8 +45,9 @@ const ContextProvider = ({ children }: { children: ReactNode }) => {
   const [data, setData] = useState(defaultData.data);
   const [correct, setCorrect] = useState(0);
   const [skip, setSkip] = useState(0)
+  const [wrong, setWrong] = useState(0)
   return (
-    <Context.Provider value={{ data, setData, correct, setCorrect, skip, setSkip }}>
+    <Context.Provider value={{ data, setData, correct, setCorrect, skip, setSkip, setWrong, wrong }}>
       {children}
     </Context.Provider>
   );

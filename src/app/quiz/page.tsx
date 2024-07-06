@@ -18,13 +18,13 @@ const Page = () => {
                 Welcome to TypeScript Test!
               </h3>
               <p className="text-sm my-4">
-                This test consists of 20 questions that cover various aspects of
-                TypeScript. You have a total of 10 minutes to complete the test.
+                This test consists of 25 questions that cover various aspects of
+                TypeScript. You have a total of 15 minutes to complete the test.
                 Please read the following guidelines carefully before starting
               </p>
               <ul className="mb-10">
                 <li className="mt-5 list-disc">
-                  Duration: You have exactly 10 minutes to complete all 20
+                  Duration: You have exactly 15 minutes to complete all 25
                   questions.
                 </li>
                 <li className="mt-5 list-disc">

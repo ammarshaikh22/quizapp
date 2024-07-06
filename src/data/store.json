@@ -1,0 +1,332 @@
+{
+    "data":[
+        {
+            "Ques": "What is the purpose of the never type in TypeScript?",
+            "option1": "To represent the type of values that never occur.",
+            "option2": "To represent the absence of a value.",
+            "option3": "To represent the type of a variable that can hold any value.",
+            "option4": "To represent the type of a variable that can be null.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "Which of the following TypeScript features helps catch errors at compile time rather than runtime?",
+            "option1": "Type annotations",
+            "option2": "Interfaces",
+            "option3": "Namespaces",
+            "option4": "All of the above",
+            "correct": "option4"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nlet input: unknown = \"hello\";\nlet str: string = input;",
+            "option1": "\"hello\"",
+            "option2": "Error",
+            "option3": "undefined",
+            "option4": "null",
+            "correct": "option2"
+          },
+          {
+            "Ques": "How do you specify that a variable can be of more than one type in TypeScript?",
+            "option1": "let value: string | number",
+            "option2": "let value: string & number",
+            "option3": "let value: [string, number]",
+            "option4": "let value: {string, number}",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nlet value: string | number;\nvalue = \"hello\";\nconsole.log(value);\nvalue = 42;\nconsole.log(value);",
+            "option1": "hello 42",
+            "option2": "hello",
+            "option3": "42",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "How do you handle errors in TypeScript?",
+            "option1": "Using try/catch blocks",
+            "option2": "Using error handling interfaces",
+            "option3": "Using error handling classes",
+            "option4": "TypeScript does not support error handling",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\ntry {\n  throw new Error(\"Something went wrong\");\n} catch (e) {\n  console.log(e.message);\n}",
+            "option1": "Something went wrong",
+            "option2": "Error",
+            "option3": "undefined",
+            "option4": "null",
+            "correct": "option1"
+          },
+          {
+            "Ques": "How do you define a type alias in TypeScript?",
+            "option1": "type MyType = string | number",
+            "option2": "alias MyType = string | number",
+            "option3": "define MyType = string | number",
+            "option4": "let MyType = string | number",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\ntype StringOrNumber = string | number;\nlet value: StringOrNumber = \"hello\";\nconsole.log(value);",
+            "option1": "\"hello\"",
+            "option2": "hello",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "Which of the following is true about TypeScript decorators?",
+            "option1": "They are special types of functions.",
+            "option2": "They are used to modify classes, methods, or properties.",
+            "option3": "They are a stage 2 proposal for JavaScript.",
+            "option4": "All of the above.",
+            "correct": "option4"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nfunction Log(target: any, key: string) {\n  console.log(`${key} was called.`);\n}\nclass MyClass {\n  @Log\n  myMethod() {}\n}\nlet obj = new MyClass();\nobj.myMethod();",
+            "option1": "\"myMethod was called.\"",
+            "option2": "myMethod",
+            "option3": "Error",
+            "option4": "undefined",
+            "correct": "option1"
+          },
+          {
+            "Ques": "How do you define an abstract class in TypeScript?",
+            "option1": "abstract class MyClass {}",
+            "option2": "class MyClass abstract {}",
+            "option3": "class MyClass {} abstract",
+            "option4": "define MyClass as abstract",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nabstract class Animal {\n  abstract makeSound(): void;\n  move(): void {\n    console.log(\"Moving...\");\n  }\n}\nclass Dog extends Animal {\n  makeSound() {\n    console.log(\"Barking...\");\n  }\n}\nlet dog = new Dog();\ndog.makeSound();",
+            "option1": "\"Barking...\"",
+            "option2": "\"Moving...\"",
+            "option3": "Error",
+            "option4": "undefined",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What is the purpose of the keyof operator in TypeScript?",
+            "option1": "To get the names of all properties of a type.",
+            "option2": "To get the values of all properties of a type.",
+            "option3": "To get the types of all properties of a type.",
+            "option4": "To get the methods of a type.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\ntype Person = { name: string, age: number };\ntype PersonKeys = keyof Person;\nlet key: PersonKeys = \"name\";\nconsole.log(key);",
+            "option1": "\"name\"",
+            "option2": "name",
+            "option3": "Error",
+            "option4": "undefined",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What is the purpose of the Partial type in TypeScript?",
+            "option1": "To make all properties of a type optional.",
+            "option2": "To make all properties of a type required.",
+            "option3": "To make all properties of a type read-only.",
+            "option4": "To make all properties of a type writable.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\ninterface User {\n  name: string;\n  age: number;\n}\nlet partialUser: Partial<User> = { name: \"Alice\" };\nconsole.log(partialUser);",
+            "option1": "{ name: \"Alice\" }",
+            "option2": "{ name: \"Alice\", age: undefined }",
+            "option3": "{ name: \"Alice\", age: null }",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "How do you create a new type by combining two existing types in TypeScript?",
+            "option1": "type NewType = Type1 & Type2",
+            "option2": "type NewType = Type1 | Type2",
+            "option3": "type NewType = Type1 + Type2",
+            "option4": "type NewType = Type1, Type2",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\ninterface Person {\n  name: string;\n}\ninterface Employee {\n  employeeId: number;\n}\ntype Worker = Person & Employee;\nlet worker: Worker = { name: \"Bob\", employeeId: 123 };\nconsole.log(worker);",
+            "option1": "{ name: \"Bob\", employeeId: 123 }",
+            "option2": "{ name: \"Bob\" }",
+            "option3": "{ employeeId: 123 }",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "Which of the following is a correct way to declare a function type in TypeScript?",
+            "option1": "type MyFunction = (x: number, y: number) => number",
+            "option2": "type MyFunction = function(x: number, y: number) => number",
+            "option3": "type MyFunction = (x: number, y: number): number",
+            "option4": "type MyFunction = function(x: number, y: number): number",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\ntype MyFunction = (x: number, y: number) => number;\nlet add: MyFunction = (a, b) => a + b;\nconsole.log(add(5, 10));",
+            "option1": "15",
+            "option2": "\"15\"",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What is the purpose of the typeof operator in TypeScript?",
+            "option1": "To get the type of a variable at runtime.",
+            "option2": "To get the value of a variable at runtime.",
+            "option3": "To check the type of a variable at compile time.",
+            "option4": "To check the value of a variable at compile time.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nlet x = \"hello\";\nconsole.log(typeof x);",
+            "option1": "\"string\"",
+            "option2": "string",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What is the purpose of the instanceof operator in TypeScript?",
+            "option1": "To check if an object is an instance of a class.",
+            "option2": "To check if an object is an instance of a type.",
+            "option3": "To check if an object is an instance of an interface.",
+            "option4": "To check if an object is an instance of a namespace.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nclass Person {\n  name: string;\n}\nlet person = new Person();\nconsole.log(person instanceof Person);",
+            "option1": "true",
+            "option2": "false",
+            "option3": "Error",
+            "option4": "undefined",
+            "correct": "option1"
+          },
+          {
+            "Ques": "Which of the following TypeScript types represents a variable that can be any value?",
+            "option1": "any",
+            "option2": "unknown",
+            "option3": "void",
+            "option4": "never",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nlet value: any = \"hello\";\nconsole.log(value);",
+            "option1": "\"hello\"",
+            "option2": "hello",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What is the purpose of the optional chaining operator (?.) in TypeScript?",
+            "option1": "To safely access nested properties.",
+            "option2": "To make a property optional.",
+            "option3": "To check if a property is defined.",
+            "option4": "To call a method if it exists.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nlet obj = { person: { name: \"Alice\" } };\nconsole.log(obj.person?.name);",
+            "option1": "\"Alice\"",
+            "option2": "Alice",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What is the purpose of the nullish coalescing operator (??) in TypeScript?",
+            "option1": "To provide a default value if the left operand is null or undefined.",
+            "option2": "To provide a default value if the left operand is false.",
+            "option3": "To provide a default value if the left operand is 0.",
+            "option4": "To provide a default value if the left operand is an empty string.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nlet value = null;\nlet result = value ?? \"default\";\nconsole.log(result);",
+            "option1": "\"default\"",
+            "option2": "default",
+            "option3": "null",
+            "option4": "undefined",
+            "correct": "option1"
+          },
+          {
+            "Ques": "How do you specify that a function returns a promise in TypeScript?",
+            "option1": "function fetchData(): Promise<string>",
+            "option2": "function fetchData(): string",
+            "option3": "function fetchData() -> Promise<string>",
+            "option4": "function fetchData() => Promise<string>",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nfunction fetchData(): Promise<string> {\n  return new Promise((resolve, reject) => {\n    resolve(\"data\");\n  });\n}\nfetchData().then(data => console.log(data));",
+            "option1": "\"data\"",
+            "option2": "data",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "How do you declare an async function in TypeScript?",
+            "option1": "async function fetchData() {}",
+            "option2": "function fetchData async() {}",
+            "option3": "function async fetchData() {}",
+            "option4": "async function fetchData {}",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nasync function fetchData() {\n  return \"data\";\n}\nfetchData().then(data => console.log(data));",
+            "option1": "\"data\"",
+            "option2": "data",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What is the purpose of the await keyword in TypeScript?",
+            "option1": "To wait for a promise to resolve.",
+            "option2": "To define an async function.",
+            "option3": "To create a promise.",
+            "option4": "To reject a promise.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nasync function fetchData() {\n  let data = await Promise.resolve(\"data\");\n  console.log(data);\n}\nfetchData();",
+            "option1": "\"data\"",
+            "option2": "data",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "How do you define a type that is the union of several string literals in TypeScript?",
+            "option1": "type Colors = \"red\" | \"green\" | \"blue\"",
+            "option2": "type Colors = {\"red\", \"green\", \"blue\"}",
+            "option3": "type Colors = [\"red\", \"green\", \"blue\"]",
+            "option4": "type Colors = (\"red\", \"green\", \"blue\")",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\ntype Colors = \"red\" | \"green\" | \"blue\";\nlet color: Colors = \"green\";\nconsole.log(color);",
+            "option1": "\"green\"",
+            "option2": "green",
+            "option3": "undefined",
+            "option4": "Error",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What is the purpose of the readonly modifier in TypeScript?",
+            "option1": "To make a property read-only.",
+            "option2": "To make a property writable.",
+            "option3": "To make a property private.",
+            "option4": "To make a property public.",
+            "correct": "option1"
+          },
+          {
+            "Ques": "What will be the output of the following TypeScript code?\nclass Person {\n  readonly name: string;\n  constructor(name: string) {\n    this.name = name;\n  }\n}\nlet person = new Person(\"Alice\");\nperson.name = \"Bob\";",
+            "option1": "Error",
+            "option2": "\"Bob\"",
+            "option3": "\"Alice\"",
+            "option4": "undefined",
+            "correct": "option1"
+          }
+    ]
+}

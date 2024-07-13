@@ -1,150 +1,6 @@
 {
   "data": [
     {
-      "Ques": "What is TypeScript?",
-      "option1": "A text formatting language",
-      "option2": "A superset of JavaScript",
-      "option3": "A type of database",
-      "option4": "A web server",
-      "correct": "option2"
-    },
-    {
-      "Ques": "Which command is used to install TypeScript globally?",
-      "option1": "npm install typescript",
-      "option2": "npm install -g typescript",
-      "option3": "npm add typescript",
-      "option4": "npm get typescript",
-      "correct": "option2"
-    },
-    {
-      "Ques": "Which file extension is used for TypeScript files?",
-      "option1": ".ts",
-      "option2": ".js",
-      "option3": ".tsx",
-      "option4": ".tscript",
-      "correct": "option1"
-    },
-    {
-      "Ques": "How do you compile a TypeScript file named app.ts?",
-      "option1": "tsc app.js",
-      "option2": "tsc app.ts",
-      "option3": "typescript app.ts",
-      "option4": "compile app.ts",
-      "correct": "option2"
-    },
-    {
-      "Ques": "Which keyword is used to define a variable in TypeScript?",
-      "option1": "var",
-      "option2": "let",
-      "option3": "const",
-      "option4": "All of the above",
-      "correct": "option4"
-    },
-    {
-      "Ques": "How do you specify the type of a variable in TypeScript?",
-      "option1": "let x = 5",
-      "option2": "let x: number = 5",
-      "option3": "let number x = 5",
-      "option4": "let x number = 5",
-      "correct": "option2"
-    },
-    {
-      "Ques": "What will be the output of the following TypeScript code?\nlet isDone: boolean = false;\nconsole.log(typeof isDone);",
-      "option1": "\"string\"",
-      "option2": "\"boolean\"",
-      "option3": "\"number\"",
-      "option4": "\"object\"",
-      "correct": "option2"
-    },
-    {
-      "Ques": "Which of the following is true about interfaces in TypeScript?",
-      "option1": "Interfaces can be used to define the structure of an object.",
-      "option2": "Interfaces can be used to define function types.",
-      "option3": "Interfaces can be implemented by classes.",
-      "option4": "All of the above.",
-      "correct": "option4"
-    },
-    {
-      "Ques": "What is the purpose of the tsconfig.json file?",
-      "option1": "To define the configuration for the TypeScript compiler.",
-      "option2": "To list all TypeScript files in the project.",
-      "option3": "To set environment variables for TypeScript.",
-      "option4": "To configure TypeScript package dependencies.",
-      "correct": "option1"
-    },
-    {
-      "Ques": "How do you define a function in TypeScript that takes a number and returns a string?",
-      "option1": "function foo(num): string",
-      "option2": "function foo(num: number): string",
-      "option3": "function foo(num: number) => string",
-      "option4": "function foo(num: number): void",
-      "correct": "option2"
-    },
-    {
-      "Ques": "What will be the output of the following TypeScript code?\nlet numbers: number[] = [1, 2, 3];\nnumbers.push(4);\nconsole.log(numbers);",
-      "option1": "[1, 2, 3]",
-      "option2": "[1, 2, 3, 4]",
-      "option3": "[4, 1, 2, 3]",
-      "option4": "Error",
-      "correct": "option2"
-    },
-    {
-      "Ques": "Which TypeScript feature allows you to specify default values for function parameters?",
-      "option1": "Optional parameters",
-      "option2": "Rest parameters",
-      "option3": "Default parameters",
-      "option4": "Named parameters",
-      "correct": "option3"
-    },
-    {
-      "Ques": "What will be the output of the following TypeScript code?\nfunction greet(name: string, age: number = 25): string {\n  return `Hello, my name is ${name} and I am ${age} years old.`;\n}\nconsole.log(greet(\"John\"));",
-      "option1": "Hello, my name is John and I am years old.",
-      "option2": "Hello, my name is John and I am 25 years old.",
-      "option3": "Hello, my name is John and I am undefined years old.",
-      "option4": "Hello, my name is John and I am NaN years old.",
-      "correct": "option2"
-    },
-    {
-      "Ques": "How do you denote a tuple type in TypeScript?",
-      "option1": "[string, number]",
-      "option2": "{string, number}",
-      "option3": "(string, number)",
-      "option4": "<string, number>",
-      "correct": "option1"
-    },
-    {
-      "Ques": "Which of the following TypeScript features helps catch errors at compile time rather than runtime?",
-      "option1": "Type annotations",
-      "option2": "Interfaces",
-      "option3": "Namespaces",
-      "option4": "All of the above",
-      "correct": "option4"
-    },
-    {
-      "Ques": "How do you define an enum in TypeScript?",
-      "option1": "enum Color {Red, Green, Blue}",
-      "option2": "enum Color = {Red, Green, Blue}",
-      "option3": "enum Color (Red, Green, Blue)",
-      "option4": "enum Color <Red, Green, Blue>",
-      "correct": "option1"
-    },
-    {
-      "Ques": "What is the purpose of the as keyword in TypeScript?",
-      "option1": "To define a new type",
-      "option2": "To perform type assertion",
-      "option3": "To declare a variable",
-      "option4": "To import a module",
-      "correct": "option2"
-    },
-    {
-      "Ques": "How do you declare a module in TypeScript?",
-      "option1": "module MyModule {}",
-      "option2": "namespace MyModule {}",
-      "option3": "declare MyModule {}",
-      "option4": "define MyModule {}",
-      "correct": "option2"
-    },
-    {
       "Ques": "What is the purpose of the never type in TypeScript?",
       "option1": "To represent the type of values that never occur.",
       "option2": "To represent the absence of a value.",
@@ -153,51 +9,171 @@
       "correct": "option1"
     },
     {
-      "Ques": "How do you specify that a variable can be of more than one type in TypeScript?",
-      "option1": "let value: string | number",
-      "option2": "let value: string & number",
-      "option3": "let value: [string, number]",
-      "option4": "let value: {string, number}",
+      "Ques": "What does an intersection type in TypeScript allow you to do?",
+      "option1": "Combine multiple types into a single type.",
+      "option2": "Create a type that can be one of several types.",
+      "option3": "Define a type that can be null or undefined.",
+      "option4": "Create a type that is a subset of another type.",
       "correct": "option1"
     },
     {
-      "Ques": "What will be the output of the following TypeScript code?\nlet value: string | number;\nvalue = \"hello\";\nconsole.log(value);\nvalue = 42;\nconsole.log(value);",
-      "option1": "hello 42",
-      "option2": "hello",
-      "option3": "42",
-      "option4": "Error",
+      "Ques": "Which operator is used to create an intersection type in TypeScript?",
+      "option1": "|",
+      "option2": "&",
+      "option3": "&&",
+      "option4": "||",
+      "correct": "option2"
+    },
+    {
+      "Ques": "What happens if two intersecting types have a property with the same name but different types?",
+      "option1": "TypeScript will throw an error.",
+      "option2": "TypeScript will merge the properties.",
+      "option3": "TypeScript will ignore one of the properties.",
+      "option4": "TypeScript will create a union type for the property.",
       "correct": "option1"
     },
     {
-      "Ques": "How do you handle errors in TypeScript?",
-      "option1": "Using try/catch blocks",
-      "option2": "Using error handling interfaces",
-      "option3": "Using error handling classes",
-      "option4": "TypeScript does not support error handling",
+      "Ques": "How do intersection types affect the properties of the resulting type?",
+      "option1": "The resulting type will have all properties of the intersected types.",
+      "option2": "The resulting type will have only the common properties of the intersected types.",
+      "option3": "The resulting type will have no properties.",
+      "option4": "The resulting type will have properties from the first type only.",
       "correct": "option1"
     },
     {
-      "Ques": "How do you specify that a class implements an interface in TypeScript?",
-      "option1": "class MyClass implements MyInterface",
-      "option2": "class MyClass extends MyInterface",
-      "option3": "class MyClass inherits MyInterface",
-      "option4": "class MyClass uses MyInterface",
+      "Ques": "What is the result of intersecting two types with no common properties?",
+      "option1": "A type with all properties from both types.",
+      "option2": "A type with no properties.",
+      "option3": "A type with only the common properties.",
+      "option4": "A type with properties from the first type only.",
       "correct": "option1"
     },
     {
-      "Ques": "What will be the output of the following TypeScript code?\ninterface User {\n  name: string;\n  age: number;\n}\nlet user: User = { name: \"Alice\", age: 25 };\nconsole.log(user);",
-      "option1": "{ name: \"Alice\", age: 25 }",
-      "option2": "{ \"name\": \"Alice\", \"age\": 25 }",
-      "option3": "{ User name: \"Alice\", age: 25 }",
-      "option4": "Error",
+      "Ques": "Can intersection types be used with primitive types in TypeScript?",
+      "option1": "Yes, they can be used with any types.",
+      "option2": "No, they can only be used with object types.",
+      "option3": "Yes, but only with string and number types.",
+      "option4": "No, they can only be used with interface types.",
       "correct": "option1"
     },
     {
-      "Ques": "What will be the output of the following TypeScript code?\ninterface Shape {\n  color: string;\n}\ninterface Square extends Shape {\n  sideLength: number;\n}\nlet square: Square = { color: \"blue\", sideLength: 10 };\nconsole.log(square);",
-      "option1": "{ color: \"blue\", sideLength: 10 }",
-      "option2": "{ Shape color: \"blue\", sideLength: 10 }",
-      "option3": "{ Square color: \"blue\", sideLength: 10 }",
-      "option4": "Error",
+      "Ques": "What is the primary use case for intersection types in TypeScript?",
+      "option1": "To create a new type that combines multiple existing types.",
+      "option2": "To create a type that can be one of several types.",
+      "option3": "To create a type that can be null or undefined.",
+      "option4": "To create a type that is a subset of another type.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "How does TypeScript handle methods in intersecting types?",
+      "option1": "All methods from both types are included in the resulting type.",
+      "option2": "Only methods from the first type are included.",
+      "option3": "Only methods from the second type are included.",
+      "option4": "Methods are not included in the resulting type.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What is the syntax for defining an intersection type in TypeScript?",
+      "option1": "type NewType = TypeA | TypeB;",
+      "option2": "type NewType = TypeA & TypeB;",
+      "option3": "type NewType = TypeA && TypeB;",
+      "option4": "type NewType = TypeA || TypeB;",
+      "correct": "option2"
+    },
+    {
+      "Ques": "Can intersection types be used with union types in TypeScript?",
+      "option1": "Yes, intersection types can be combined with union types.",
+      "option2": "No, intersection types cannot be combined with union types.",
+      "option3": "Yes, but only with specific union types.",
+      "option4": "No, they are mutually exclusive.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What is the result of intersecting a type with itself?",
+      "option1": "The same type.",
+      "option2": "An empty type.",
+      "option3": "A union type.",
+      "option4": "A never type.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "How does TypeScript handle optional properties in intersecting types?",
+      "option1": "Optional properties are included in the resulting type.",
+      "option2": "Optional properties are excluded from the resulting type.",
+      "option3": "Optional properties are converted to required properties.",
+      "option4": "Optional properties are ignored.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What is the effect of intersecting a type with the any type?",
+      "option1": "The resulting type is the any type.",
+      "option2": "The resulting type is the original type.",
+      "option3": "The resulting type is an empty type.",
+      "option4": "The resulting type is a union type.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "Can intersection types be used with generic types in TypeScript?",
+      "option1": "Yes, intersection types can be used with generic types.",
+      "option2": "No, intersection types cannot be used with generic types.",
+      "option3": "Yes, but only with specific generic types.",
+      "option4": "No, they are mutually exclusive.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What is the result of intersecting a type with the unknown type?",
+      "option1": "The resulting type is the unknown type.",
+      "option2": "The resulting type is the original type.",
+      "option3": "The resulting type is an empty type.",
+      "option4": "The resulting type is a union type.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "How does TypeScript handle readonly properties in intersecting types?",
+      "option1": "Readonly properties are included in the resulting type.",
+      "option2": "Readonly properties are excluded from the resulting type.",
+      "option3": "Readonly properties are converted to writable properties.",
+      "option4": "Readonly properties are ignored.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What is the effect of intersecting a type with the never type?",
+      "option1": "The resulting type is the never type.",
+      "option2": "The resulting type is the original type.",
+      "option3": "The resulting type is an empty type.",
+      "option4": "The resulting type is a union type.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "Can intersection types be used with interface types in TypeScript?",
+      "option1": "Yes, intersection types can be used with interface types.",
+      "option2": "No, intersection types cannot be used with interface types.",
+      "option3": "Yes, but only with specific interface types.",
+      "option4": "No, they are mutually exclusive.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What is the result of intersecting a type with the void type?",
+      "option1": "The resulting type is the void type.",
+      "option2": "The resulting type is the original type.",
+      "option3": "The resulting type is an empty type.",
+      "option4": "The resulting type is a union type.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "How does TypeScript handle private properties in intersecting types?",
+      "option1": "Private properties are included in the resulting type.",
+      "option2": "Private properties are excluded from the resulting type.",
+      "option3": "Private properties are converted to public properties.",
+      "option4": "Private properties are ignored.",
+      "correct": "option1"
+    },
+    {
+      "Ques": "What is the effect of intersecting a type with the null type?",
+      "option1": "The resulting type is the null type.",
+      "option2": "The resulting type is the original type.",
+      "option3": "The resulting type is an empty type.",
+      "option4": "The resulting type is a union type.",
       "correct": "option1"
     }
   ]
